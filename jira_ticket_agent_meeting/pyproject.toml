@@ -1,0 +1,23 @@
+[project]
+name = "jira_ticket_agent_meeting"
+version = "0.1.0"
+description = "jira_ticket_agent_meeting using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]>=0.126.0,<1.0.0"
+]
+
+[project.scripts]
+jira_ticket_agent_meeting = "jira_ticket_agent_meeting.main:run"
+run_crew = "jira_ticket_agent_meeting.main:run"
+train = "jira_ticket_agent_meeting.main:train"
+replay = "jira_ticket_agent_meeting.main:replay"
+test = "jira_ticket_agent_meeting.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

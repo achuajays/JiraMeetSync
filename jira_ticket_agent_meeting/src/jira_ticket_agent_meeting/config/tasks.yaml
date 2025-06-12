@@ -1,0 +1,21 @@
+meeting_ticket_extraction_task:
+  description: >
+    Analyze the provided meeting transcript and extract all actionable ticket items discussed. {pdf_file}
+    Identify and summarize each ticket, including relevant details such as issue, context, and any requirements mentioned.
+  expected_output: >
+    A list of all tickets identified in the meeting transcript.
+    Each ticket should include a brief summary, context, and any specific requirements or action items.
+  agent: ticket_understander
+
+jira_ticket_creation_task:
+  description: >
+    Using the extracted ticket information, create well-structured Jira tickets for each item in the list .
+    Ensure each ticket is clear, complete, and ready for the development team, including title, description, acceptance criteria, and any relevant metadata.
+    🔎 Valid issue types for project :
+    - Epic
+    - Subtask
+    - Task
+    - Story
+  expected_output: >
+    A set of Jira ticket drafts, one for each identified ticket, formatted with title, description, acceptance criteria, and any additional fields required for Jira.
+  agent: jira_ticket_creator
