@@ -1,4 +1,5 @@
 # JiraMeetSync - AI-Powered Meeting to Jira Ticket Automation
+![JiraMeetSync](JiraMeetSync.png)
 
 ## Overview
 
