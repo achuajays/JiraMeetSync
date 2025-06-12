@@ -20,7 +20,7 @@ crewai install
 ```
 ### Customizing
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+**Add your `GEMINI_API_KEY ,  MODEL , JIRA_URL  , JIRA_USERNAME , JIRA_PASSWORD , JIRA_PROJECT_KEY ` into the `.env` file**
 
 - Modify `src/jira_ticket_agent_meeting/config/agents.yaml` to define your agents
 - Modify `src/jira_ticket_agent_meeting/config/tasks.yaml` to define your tasks
